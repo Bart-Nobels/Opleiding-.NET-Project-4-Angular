@@ -1,0 +1,46 @@
+.logo {
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 0px 15px;
+    margin-right: 20px
+}
+
+.typewriter-text {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    animation: typewriter 3s steps(44) 1s 1 normal both,
+        blinkTextCursor 750ms steps(44) infinite normal;
+}
+
+.cursor {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    animation: blinkTextCursor 750ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 13.5em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: white;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
